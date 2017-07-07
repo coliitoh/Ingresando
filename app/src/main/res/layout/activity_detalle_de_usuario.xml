@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="layout.detalles.Detalle_de_usuario">
+
+
+    <TextView
+        android:id="@+id/editusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/EditTelefono"
+        android:layout_alignStart="@+id/EditTelefono"
+        android:layout_alignRight="@+id/EditTelefono"
+        android:layout_alignEnd="@+id/EditTelefono" />
+
+    <EditText
+        android:id="@+id/EditTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese un Telefono"
+        android:inputType="phone"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:id="@+id/btnmarcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeSplitBackground"
+        android:text="Marcar"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:layout_above="@+id/btnfinalizar"
+        android:layout_alignLeft="@+id/EditTelefono"
+        android:layout_alignStart="@+id/EditTelefono"
+        android:layout_marginBottom="47dp"
+        android:layout_alignRight="@+id/EditTelefono"
+        android:layout_alignEnd="@+id/EditTelefono" />
+
+    <Button
+        android:id="@+id/btnfinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/actionModeSplitBackground"
+        android:text="Finalizar"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:srcCompat="@drawable/tel"
+        android:layout_below="@+id/editusuario"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

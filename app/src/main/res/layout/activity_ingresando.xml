@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context="tp3.ingresando.Ingresando">
+
+    <EditText
+        android:id="@+id/TextUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:autoText="false"
+        android:ems="10"
+        android:hint="Ingrese Su Usuario"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/darker_gray"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Textpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnIngresar"
+        android:layout_alignLeft="@+id/TextUsuario"
+        android:layout_alignStart="@+id/TextUsuario"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="Ingrese su Contraseña"
+        android:inputType="numberPassword"
+        android:selectAllOnFocus="false"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/darker_gray"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="Control De Acceso"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/darker_gray"
+        android:textSize="5mm"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="?attr/actionModeSplitBackground"
+        android:text="Ingresar"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorLink="@android:color/darker_gray"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/candado"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>
